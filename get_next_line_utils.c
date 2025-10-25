@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salzghou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 15:04:53 by salzghou          #+#    #+#             */
-/*   Updated: 2025/10/23 15:04:55 by salzghou         ###   ########.fr       */
+/*   Updated: 2025/10/25 22:48:57 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include"get_next_line.h"
+#include "get_next_line.h"
 
 char	*ft_strdup(const char *s)
 {
@@ -33,6 +32,7 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	s1len;
@@ -60,6 +60,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[s1len + i] = '\0';
 	return (result);
 }
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -69,6 +70,7 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
 char	*ft_strchr(const char *s, int c)
 {
 	while ((char)c != *s)
@@ -79,6 +81,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s);
 }
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*s;
@@ -97,4 +100,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
-

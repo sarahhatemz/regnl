@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salzghou <salzghou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 15:05:45 by salzghou          #+#    #+#             */
-/*   Updated: 2025/10/23 16:14:34 by salzghou         ###   ########.fr       */
+/*   Updated: 2025/10/25 22:48:32 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+
 char	*get_next_line(int fd);
 char	*ft_strdup(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);
